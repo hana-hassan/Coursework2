@@ -1,0 +1,126 @@
+/*referred to this page for layout: 
+https://www.w3schools.com/howto/howto_css_split_screen.asp*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:smaller;
+    font-weight: 300;
+    display: flex;
+}
+
+#navigation{
+    position: fixed;
+    z-index: 19;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.825rem;
+    display: flex;
+    margin-left: 30px;
+}
+
+#nav_items{
+    font-size: 1.3em;
+}
+
+ul{
+    list-style-type: none;
+    box-sizing: border-box;
+    color: #fff;
+
+}
+li{
+    display: inline-block;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: 250ms;
+}
+
+a:hover{
+    border-bottom: 1px solid white;
+    color:#fff;
+}
+
+#right{
+    height: 100%;
+    width: 50%;
+    right:0%;
+    position: fixed;
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    left:0%;
+    position: fixed;
+    background-color: #e56e56;
+    padding: 4.5rem 2.125rem;
+}
+
+img{
+    height: 100%;
+}
+
+#content{
+    position: relative;
+    width: 100%;
+    max-width: 40rem;
+    margin-top: 10%;
+}
+
+#content-subheading{
+    display: block;
+    width: 14.5625em;
+    font-size: 1.2em;
+    margin: 0 auto 3.25rem;
+}
+
+#content-text{
+    display: block;
+    max-width: 21rem;
+    font-size: 1.375em;
+    margin: auto;
+    text-align: center;
+}
+
+#content-text > p{
+    line-height: 1.6em;
+    margin: 1.333em 0 0 0;
+}
+
+#restaurant_button{
+    margin-top: 3.25rem;
+    font-size: 0;
+    text-align: center;
+    margin-bottom: -1.5rem;
+    box-sizing: border-box;
+}
+
+#button{
+    display: inline-block;
+    text-transform: uppercase;
+    border-color: #000 ;
+    border: 1px solid;
+    background-color: #e56e56;
+    padding: 1rem 1rem 0.75rem;
+    line-height: 1;
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    min-width: 10em;
+    transition-duration: 350ms ;
+}
+
+#button:hover{
+    background-color: #FFF;
+    border: 1px solid transparent;
+}

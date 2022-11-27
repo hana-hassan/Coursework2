@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #000;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    max-width: 40rem;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#banner{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right:0%;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+#background{
+    box-sizing: content-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+#image{
+    height: 100%;
+    width:  100%;
+    position: fixed;
+}
+
+#image > img{
+    width: 100%;
+    object-fit:cover;
+    position: absolute;
+}
+
+
+#site-title{
+    z-index: 2;
+    margin: auto;
+    width: 428px;
+    max-width: 35%;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}  
+}
+
+#navigation{
+    position: fixed;
+    z-index: 19;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.625rem;
+    display: flex;
+}
+
+#nav_items{
+    font-size: 1.1em;
+}
+
+ul{
+    list-style-type: none;
+    box-sizing: border-box;
+    color: #fff;
+
+}
+li{
+    display: inline-block;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: 250ms;
+}
+
+a:hover{
+    border-bottom: 1px solid white;
+    color:#fff;
+}
+
+
+#home_footer{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    right: 2.125rem;
+    bottom: 1.125rem;
+    left: 1.125rem;
+    display: flex;
+    font-size: 1.1em;
+    margin-left: 35px;
+    justify-content: space-between;
+}
+
+#right_link{
+    color: white;
+}
+
+#rectangle{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 20vh;
+    align-items: center;
+    padding: 4.5rem 2.125rem;
+    background-color: #dbdbdb;
+    margin-top: 630px;
+    justify-content: center;
+}
+
+#box_content{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 50rem;
+    box-sizing: border-box;
+}
+
+#text{
+    width: 100%;
+    max-width: 50em;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 1.0em;
+}
+
+#text > h2{
+    font-weight:500;
+
+}
